@@ -3,8 +3,132 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="form_styles.css" />
     <title>Form</title>
   </head>
-  <body></body>
+  <body>
+    <main class="app">
+      <header class="header">
+        <h1 class="header__title">Quiz-App</h1>
+      </header>
+      <form class="form">
+        <label for="question" data-js="yourQuestion">Your question:</label>
+        <textarea
+          id="question"
+          rows="7"
+          name="question"
+          maxlength="150"
+          data-js="input-question"
+        ></textarea>
+        <span class="form__character-count">
+          <span data-js="amount-left-question">150</span> characters left
+        </span>
+        <label for="answer">Your answer:</label>
+        <textarea
+          id="answer"
+          rows="7"
+          name="answer"
+          maxlength="150"
+          data-js="input-answer"
+        ></textarea>
+        <span class="form__character-count">
+          <span data-js="amount-left-answer">150</span> characters left
+        </span>
+        <label for="tags">Tags:</label>
+        <input id="tags" type="text" name="tags" />
+        <button class="card__button-answer" type="submit" data-js="answerBtn">
+          Submit
+        </button>
+      </form>
+    </main>
+  </body>
+  <nav class="navigation">
+    <ul class="navigation__list">
+      <li class="navigation__list-item navigation__list-item--active">
+        <a
+          class="navigation__link"
+          href="/index.html"
+          aria-label="go to home page"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewbox="0 0 24 24"
+            width="24px"
+          >
+            <path
+              d="M12 5.69l5 4.5V18h-2v-6H9v6H7v-7.81l5-4.5M12 3L2 12h3v8h6v-6h2v6h6v-8h3L12 3z"
+            />
+          </svg>
+        </a>
+      </li>
+      <li class="navigation__list-item">
+        <a
+          class="navigation__link"
+          href="/bookmarks.html"
+          aria-label="go to bookmarks page"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewbox="0 0 24 24"
+            width="24px"
+          >
+            <path
+              d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2zm0 15l-5-2.18L7 18V5h10v13z"
+            />
+          </svg>
+        </a>
+      </li>
+      <li class="navigation__list-item">
+        <a
+          class="navigation__link"
+          href="/form.html"
+          aria-label="go to create new card page"
+        >
+          <svg
+            height="24px"
+            width="24px"
+            version="1.1"
+            id="Capa_1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 0 309.059 309.059"
+            xml:space="preserve"
+          >
+            <g>
+              <g>
+                <path
+                  style="fill: #010002"
+                  d="M280.71,126.181h-97.822V28.338C182.889,12.711,170.172,0,154.529,0S126.17,12.711,126.17,28.338
+       v97.843H28.359C12.722,126.181,0,138.903,0,154.529c0,15.621,12.717,28.338,28.359,28.338h97.811v97.843
+       c0,15.632,12.711,28.348,28.359,28.348c15.643,0,28.359-12.717,28.359-28.348v-97.843h97.822
+       c15.632,0,28.348-12.717,28.348-28.338C309.059,138.903,296.342,126.181,280.71,126.181z"
+                />
+              </g>
+            </g>
+          </svg>
+        </a>
+      </li>
+      <li class="navigation__list-item">
+        <a
+          class="navigation__link"
+          href="/profile.html"
+          aria-label="go to profile page"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewbox="0 0 24 24"
+            width="24px"
+          >
+            <path
+              d="M12 6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2m0 9c2.7 0 5.8 1.29 6 2v1H6v-.99c.2-.72 3.3-2.01 6-2.01m0-11C9.79 4 8 5.79 8 8s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 9c-2.67 0-8 1.34-8 4v3h16v-3c0-2.66-5.33-4-8-4z"
+            />
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </nav>
   <script src="form.js" defer></script>
 </html>

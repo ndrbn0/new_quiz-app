@@ -7,3 +7,45 @@
 @import "./components/navigation/navigation.css";
 @import "./components/profile/profile.css";
 @import "./components/counter-list/counter-list.css";
+
+:root {
+  --primary: #ffffff;
+  --secondary: #ff4a11;
+  --secondary-light: #fddcd2;
+  --color-water-10: #f3f5f9;
+  --black: #252629;
+  --ff-primary: sans-serif;
+  --ff-serif: serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+head {
+  display: none;
+}
+
+body {
+  line-height: 1.5;
+  font-family: var(--ff-primary);
+  color: var(--black);
+}
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+.form {
+  padding: 10rem 2rem 3rem 2rem;
+  max-width: 650px;
+  margin: 0 auto;
+  display: grid;
+  flex-direction: column;
+  gap: 1rem;
+}
