@@ -49,3 +49,7 @@ p {
   flex-direction: column;
   gap: 1rem;
 }
+
+.card {
+  margin-bottom: 50px;
+}
