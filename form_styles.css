@@ -53,3 +53,22 @@ p {
 .card {
   margin-bottom: 50px;
 }
+
+.card-list {
+  display: block;
+  unicode-bidi: isolate;
+}
+
+.card__tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 20px;
+}
+
+.card__tag-list-item {
+  background-color: var(--secondary);
+  color: var(--white);
+  border-radius: 4px;
+  padding: 0 5px;
+}

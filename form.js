@@ -27,6 +27,11 @@ document.addEventListener("DOMContentLoaded", () => {
   const answerInput = document.querySelector('[data-js="input-answer"]');
   const tagsInput = document.getElementById("tags");
 
+  const cardListSection = document.createElement("section");
+  cardListSection.classList.add("card-list");
+
+  document.body.appendChild(cardListSection);
+
   form.addEventListener("submit", (event) => {
     event.preventDefault();
 
@@ -66,7 +71,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     tags.split(",").forEach((tag) => {
       const tagItem = document.createElement("li");
-      tagItem.classList.add("card__tag");
+      tagItem.classList.add("card__tag-list-item");
       tagItem.textContent = tag.trim();
       tagList.appendChild(tagItem);
     });
